@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>fman42</Authors>
+    <Company>fman42</Company>
+    <Copyright></Copyright>
+    <PackageProjectUrl>https://github.com/fman42/FutureBinanceAPI</PackageProjectUrl>
+    <Description>A simple library for working with Future Binance API supporting all types of orders, endpoints for market, order and account</Description>
+    <RepositoryUrl>https://github.com/fman42/FutureBinanceAPI</RepositoryUrl>
+    <PackageTags>binance, futurebinanceapi, futurebinance, api, future binance api, binance api</PackageTags>
+    <AssemblyVersion>2.1.1.0</AssemblyVersion>
+    <FileVersion>2.1.1.0</FileVersion>
+    <PackageReleaseNotes>Implemented stream events. Added new methods for TradeEndPoint. Change traiding pairs</PackageReleaseNotes>
+    <Version>2.1.1</Version>
+    <PackageIcon>icon.png</PackageIcon>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Events\General\" />
+    <Folder Include="CustomRequest\" />
+    <Folder Include="Tools\Stream\" />
+    <Folder Include="Models\Margins\" />
+    <Folder Include="Tools\Converters\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+</Project>

@@ -15,6 +15,7 @@ namespace TelegramFutures
     {
 
         private static readonly TelegramBotClient bot = new TelegramBotClient("762817967:AAH6G4fDma5dnsQnzFOfe8jlOurEbfbPiCs");
+
         delegate void SetTextCallback(string text);
 
         public TelegramReader()
